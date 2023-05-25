@@ -1,3 +1,37 @@
+.play-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #ff69b4;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.3s;
+  }
+  
+  .play-button:hover {
+	background-color: #ff94c2;
+  }
+  
+  .play-pause {
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 14px solid #fff;
+	transition: all 0.3s;
+  }
+  
+  .play-button.audio-playing .play-pause {
+	border-left: none;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-right: 14px solid #fff;
+  }
 body {
 	margin: 0;
 	padding: 0;
