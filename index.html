@@ -8,12 +8,19 @@
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
+
 	<div class="background">
 		<video src="向前，冲，海浪，日落.mp4" autoplay muted loop></video>
 		<div class="overlay"></div>
 	</div>
 	<div class="content">
-		<p id="typed-text">几乎不可避免的是<br>我喜欢你，<br>我爱你，<br>我希望和你在一起，<br>直到永远。</p>
+		<p id="typed-text"></p>
+	</div>
+	<!-- 添加音频元素 -->
+	<audio id="audio" src="Loved Cast.mp3" loop></audio>
+	<!-- 添加播放按钮 -->
+	<div class="play-button" onclick="toggleAudio()">
+		<div class="play-pause"></div>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
